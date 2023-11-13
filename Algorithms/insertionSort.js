@@ -5,12 +5,12 @@ console.log(insertionSort(arr,n));
 function insertionSort(arr,n){
     for(let i=1;i<n;i++){
         let current=arr[i];
-        let lastIndex=i-1;
-        while(lastIndex>=0 && arr[lastIndex]>current){
-            arr[lastIndex+1]=arr[lastIndex];
-            lastIndex--;
+        let previousIndex=i-1;
+        while(previousIndex>=0 && arr[previousIndex]>current){
+            arr[previousIndex+1]=arr[previousIndex];
+            previousIndex--;
         }
-        arr[lastIndex+1]=current;
+        arr[previousIndex+1]=current;
     }
     return arr;
 }
