@@ -1,0 +1,9 @@
+let s=['h','e','l','l','o'];
+let reverse=[];
+    let right=s.length-1;
+    while(right>=0){
+        let ch=s[right];
+        reverse.push();
+        right--;
+    }
+    console.log(reverse);
